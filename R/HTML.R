@@ -42,9 +42,9 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retin
 #'  *Marie Skłodowska-Curie Actions Postdoctoral Fellowships* are evaluated as full proposals submitted jointly by the researcher and host organisation through the EU Funding & Tenders Portal. Eligible proposals are assessed after the call deadline (September, in case of 2025) by at least three independent external experts against the *Marie Skłodowska-Curie Actions* award criteria: Excellence, Impact, and Quality and Efficiency of Implementation. Experts first evaluate proposals individually and then agree on consensus scores and comments, which form the basis of the Evaluation Summary Report and final ranking. The *Marie Skłodowska-Curie Actions* score distributions analysed here therefore represent eligible full proposals evaluated through this single-stage full-proposal procedure, rather than applications pre-selected through an initial short-proposal stage.
 #'  </span>
 #'
-#' - [`data_HFSP.csv`](https://github.com/MartinBulla/correspondence_funding/blob/main/Data/data_HFSP.csv): contains year, rank and score (0-10) of [Research Grant](https://www.hfsp.org/funding/hfsp-funding/research-grants) proposals, written by the applicants invited to write full-blast proposals. Such data are not publicly available, but were kindly provided by [Human Frontiers Science Program](https://www.hfsp.org) for calls with 2024 and 2025 deadlines. We then transformed the scores into percentages (10 representing 100% percent) and to mimic Fig. 1 data, calculated the percentage of evaluated proposals scoring >= each percentage threshold.
+#' - [`data_HFSP.csv`](https://github.com/MartinBulla/correspondence_funding/blob/main/Data/data_HFSP.csv): contains the scheme, application year, proposal rank and score (1-10) of Full Proposals submitted to the [Postdoctoral Fellowships](https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships) and [Research Grants](https://www.hfsp.org/funding/hfsp-funding/research-grants) schemes. These non-public data were kindly provided by the [Human Frontier Science Program](https://www.hfsp.org) for applications submitted from 2022 to 2025. We transformed the scores into percentages, with 10 representing 100%, and, to match Fig. 1, calculated the percentage of evaluated proposals scoring at or above each percentage threshold.
 #'  <span style="display:block; margin-top:0.4em;">
-#'  Human Frontiers Science Program evaluates the Postdoctoral Fellowships through a staged procedure. Applicants first submit a short Letter of Intent (deadline in May), from which the review committee selects candidates invited to submit a full proposal (deadline in September). The score distributions analysed here therefore represent only shortlisted applications that proceeded to full evaluation, not the full applicant pool.
+#' The Human Frontier Science Program evaluates both schemes through a two-stage procedure. Applicants first submit a short Letter of Intent (deadline in Spring), from which scheme-specific committees select applicants invited to submit a Full Proposal (deadline in September). The score distributions analysed here therefore represent only shortlisted applications that advanced to the Full Proposal stage, not the full applicant pool.
 #'  </span>
 #'
 #' [**R**](https://github.com/MartinBulla/correspondence_funding/tree/main/R) folder stores scripts used in the analysis:
@@ -84,6 +84,7 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retin
 
 # Packages, settings
 require(data.table)
+require(ggh4x)
 require(ggplot2)
 require(grid)
 require(gridExtra)
@@ -202,7 +203,6 @@ dt_long[, Year_f := factor(Year, levels = sort(unique(Year)))]
 #summary(dt_long[Score%in%85 & Year == 2025])
 #summary(dt_long[Score%in%85 & Year < 2025])
 
-
 # plot
 pA <- ggplot(
   dt_long,
@@ -304,9 +304,7 @@ knitr::include_graphics(here::here("Output/fig_1_width-185mm.png"))
 #' <a name="F_1">**Figure 1</a> | Temporal shift and score compression in evaluations of Marie Skłodowska-Curie Actions postdoctoral fellowships.** **a**, Temporal trend in the percentage of proposals scoring at or above threshold across evaluation panels. The 2025 cohort (yellow) shows a marked divergence from the tightly clustered historical distribution (2018–2024), shifting toward higher scores across all deciles. For example, the 85% ‘Seal of Excellence’ threshold was reached by ~`r dt_long[Score%in%85 & Year == 2025, round(median(applications))]`% of proposals in 2025, compared to ~`r dt_long[Score%in%85 & Year!=2025, round(median(applications))]`% in previous years (medians). n~2018~ = 9,830 applications, n~2019~ = 9,875, n~2020~ = 11,573, n~2021~  = 8,356, n~2022~ = 7,044, n~2023~ = 8,039, n~2024~ = 10,360, n~2025~ = 17,066. **b**, Temporal trend of "excellence saturation", defined as the percentage of proposals achieving a score ≥95%. Data extracted from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/) and available via [@bulla2026].
 #'
 
-
-
-#+ F_2, fig.width=6/2.5, fig.height = 4.5/2.5
+#+ F_2, fig.width=8.5/2.5, fig.height = 4/2.5
 
 # colors
 year_cols <- setNames(
@@ -315,12 +313,10 @@ year_cols <- setNames(
 ) #year_cols["2025"]
 
 
-pal <-c(year_cols["2024"], year_cols["2025"]) # c("2024" = "grey60", "2025" = "#FDE725FF")
+pal <-c(year_cols["2022"], year_cols["2023"], year_cols["2024"], year_cols["2025"])
 
 # data
 dt <- fread(here::here("Data/data_HFSP.csv"))
-dt[year == 2025, year:=2024] # HFSP calls the call 2025, but the deadline for the applicants (and here relevant) is 2024
-dt[year == 2026, year:=2025] # HFSP calls the call 2026, but the deadline for the applicants (and here relevant) is 2025
 dt[, percent := 100*score/10]
 dt[, year_chr := as.character(year)]
 dt[, year_f := factor(year)]
@@ -333,7 +329,7 @@ ccdf <- dt[, {
     applications = vapply(th, function(x) mean(percent >= x)*100, numeric(1)),
     n = .N
   )
-}, by = year_f]
+}, by = list(scheme, year_f)]
 
 # plot
 p_hfsp <- ggplot(
@@ -341,6 +337,26 @@ p_hfsp <- ggplot(
   aes(x = Score, y = applications, colour = year_f, group = year_f)
 ) +
   geom_step(linewidth = 0.6) +
+  facet_wrap(~ scheme, nrow = 1, scales = 'free_x') +
+  facetted_pos_scales(
+    x = list(
+      scheme == "Postdoctoral Fellowships" ~
+        scale_x_continuous(
+          limits = c(40, 100),
+          breaks = seq(40, 100, by = 10),
+          labels = c("40%", "50%", "60%", "70%", "80%", "90%", ""),
+          expand = expansion(mult = 0)
+        ),
+
+      scheme == "Research Grants" ~
+        scale_x_continuous(
+          limits = c(40, 100),
+          breaks = seq(40, 100, by = 10),
+          labels = c("", "50%", "60%", "70%", "80%", "90%", "100%"),
+          expand = expansion(mult = 0)
+        )
+    )
+  ) +
   labs(
     x = "Evaluation score",
     y = "Proposals scoring ≥ score",
@@ -356,24 +372,24 @@ p_hfsp <- ggplot(
       expand = expansion(mult = c(0, 0)), breaks = seq(0,100, by = 25)
       ) +
 
-  scale_x_continuous(labels = function(x) ifelse(x == 0, "", paste0(x, "%")), expand = expansion(mult = c(0, 0))) +
+  #scale_x_continuous(labels = function(x) ifelse(x == 0, "", paste0(x, "%")), expand = expansion(mult = c(0, 0))) +
   theme_bw(base_size = 7) +
   theme_MB +
   theme(
-    legend.position = c(0.95, 0.95),
-    legend.justification = c(1, 1),
+    #legend.position = c(0.95, 0.95),
+    #legend.justification = c(1, 1),
     legend.background = element_rect(fill = scales::alpha("white", 0.7), colour = NA),
     legend.key = element_blank(),
     legend.box.background = element_blank(),
 
-    plot.margin = margin(t = 4, r = 8)
+    #plot.margin = margin(t = 4, r = 8)
   )
 
-ggsave(here::here("Output/Fig_2_width-60mm.png"),p_hfsp, width = 6, height = 4.5, units = 'cm')
+ggsave(here::here("Output/Fig_2_width-85mm.png"),p_hfsp, width = 8.5, height = 4, units = 'cm')
 
 p_hfsp
 
-#' <a name="F_2">**Figure 2</a> | Score distributions in evaluations of Human Frontier Science Program Postdoctoral Fellowships.** Percentage of evaluated full proposals scoring at or above each evaluation-score threshold in the 2024 and 2025 calls. Proposal scores were originally provided on a 0–10 scale and were transformed to percentages to match the threshold-based representation used in Fig. 1. The two years show  similar cumulative score distributions. n~2024~ = 65 applications, n~2025~ = 70. Data are available via [@bulla2026].
+#' <a name="F_2">**Figure 2</a> | Score distributions in evaluations of Human Frontier Science Program.** Percentage of evaluated full proposals scoring at or above each evaluation-score threshold across application years (2022–2025) and funding schemes (Postdoctoral Fellowships and Research Grants). Proposal scores were originally provided on a 1–10 scale and were transformed to percentages to match the threshold-based representation used in Fig. 1. Score distributions were similar across years and between the two schemes. Postdoctoral Fellowships: n~2022~ = 89 applications at the Full Proposal stage  (out of 393 evaluated Letters of Intent), n~2023~ = 91 (492), n~2024~ = 111 (525), n~2025~ = 117 (663). Research Grants: n~2022~ = 57 (450), n~2023~ = 82 (585), n~2024~ = 65 (669), n~2025~ = 70 (956). Data are available via [@bulla2026].
 
 #' <br />
 #'

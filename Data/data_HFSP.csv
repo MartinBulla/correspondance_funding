@@ -1,136 +1,683 @@
-﻿year,rank,score
-2025,1,9.23
-2025,2,9.09
-2025,3,8.96
-2025,4,8.85
-2025,5,8.7
-2025,6,8.69
-2025,7,8.65
-2025,8,8.63
-2025,9,8.6
-2025,9,8.6
-2025,11,8.54
-2025,12,8.52
-2025,13,8.5
-2025,14,8.44
-2025,15,8.35
-2025,16,8.31
-2025,17,8.28
-2025,18,8.19
-2025,19,8.15
-2025,20,7.94
-2025,21,7.92
-2025,22,7.85
-2025,23,7.73
-2025,24,7.42
-2025,24,7.42
-2025,26,7.15
-2025,27,7.04
-2025,28,6.96
-2025,29,6.92
-2025,30,6.9
-2025,31,6.88
-2025,32,6.82
-2025,33,6.77
-2025,34,6.75
-2025,35,6.65
-2025,36,6.6
-2025,37,6.58
-2025,38,6.58
-2025,39,6.56
-2025,40,6.5
-2025,41,6.39
-2025,42,6.35
-2025,43,6.28
-2025,44,6.21
-2025,45,6.1
-2025,46,6.1
-2025,47,6.02
-2025,48,5.96
-2025,49,5.85
-2025,50,5.83
-2025,51,5.81
-2025,52,5.65
-2025,53,5.63
-2025,54,5.6
-2025,55,5.48
-2025,56,5.44
-2025,57,5.38
-2025,58,5.13
-2025,59,4.98
-2025,60,4.94
-2025,61,4.83
-2025,62,4.55
-2025,63,4.5
-2025,64,4.48
-2025,65,4.02
-2026,1,9.4
-2026,2,9.3
-2026,3,8.9
-2026,4,8.9
-2026,5,8.8
-2026,6,8.8
-2026,7,8.7
-2026,7,8.7
-2026,9,8.6
-2026,10,8.5
-2026,11,8.5
-2026,12,8.3
-2026,13,8.3
-2026,14,8.3
-2026,15,8.1
-2026,16,8
-2026,16,8
-2026,18,8
-2026,19,8
-2026,20,7.9
-2026,21,7.8
-2026,22,7.8
-2026,23,7.7
-2026,24,7.7
-2026,25,7.7
-2026,26,7.6
-2026,27,7.5
-2026,28,7.4
-2026,29,7.3
-2026,30,7.1
-2026,31,7.1
-2026,32,7
-2026,33,7
-2026,34,7
-2026,35,6.9
-2026,35,6.9
-2026,37,6.9
-2026,38,6.9
-2026,39,6.9
-2026,40,6.5
-2026,41,6.5
-2026,42,6.4
-2026,43,6.4
-2026,44,6.4
-2026,45,6.3
-2026,46,6.3
-2026,47,6.3
-2026,48,6.1
-2026,49,6.1
-2026,50,6
-2026,51,6
-2026,52,6
-2026,53,5.9
-2026,54,5.8
-2026,55,5.7
-2026,56,5.7
-2026,57,5.5
-2026,58,5.5
-2026,59,5.5
-2026,60,5.4
-2026,61,5.3
-2026,62,5.2
-2026,63,5.2
-2026,64,5
-2026,65,5
-2026,65,5
-2026,67,5
-2026,68,4.3
-2026,69,4.1
-2026,70,4
+scheme,year,rank,score
+Research Grants,2022,1,9.31
+Research Grants,2022,2,9
+Research Grants,2022,3,8.95
+Research Grants,2022,4,8.88
+Research Grants,2022,5,8.69
+Research Grants,2022,6,8.64
+Research Grants,2022,7,8.55
+Research Grants,2022,8,8.45
+Research Grants,2022,9,8.4
+Research Grants,2022,10,8.32
+Research Grants,2022,11,8.3
+Research Grants,2022,12,8.15
+Research Grants,2022,13,8.1
+Research Grants,2022,14,7.8
+Research Grants,2022,15,7.79
+Research Grants,2022,16,7.73
+Research Grants,2022,17,7.66
+Research Grants,2022,18,7.25
+Research Grants,2022,19,7.17
+Research Grants,2022,20,7.15
+Research Grants,2022,21,7.11
+Research Grants,2022,22,7.07
+Research Grants,2022,23,7.07
+Research Grants,2022,24,7.03
+Research Grants,2022,25,7
+Research Grants,2022,26,6.93
+Research Grants,2022,27,6.88
+Research Grants,2022,28,6.77
+Research Grants,2022,29,6.68
+Research Grants,2022,30,6.59
+Research Grants,2022,31,6.55
+Research Grants,2022,32,6.53
+Research Grants,2022,33,6.41
+Research Grants,2022,34,6.4
+Research Grants,2022,35,6.4
+Research Grants,2022,36,6.39
+Research Grants,2022,37,6.36
+Research Grants,2022,38,6.35
+Research Grants,2022,39,6.33
+Research Grants,2022,40,6.2
+Research Grants,2022,41,6.18
+Research Grants,2022,42,6.17
+Research Grants,2022,43,6.1
+Research Grants,2022,44,6.05
+Research Grants,2022,45,5.91
+Research Grants,2022,46,5.9
+Research Grants,2022,47,5.86
+Research Grants,2022,48,5.85
+Research Grants,2022,49,5.8
+Research Grants,2022,50,5.77
+Research Grants,2022,51,5.67
+Research Grants,2022,52,4.89
+Research Grants,2022,53,4.55
+Research Grants,2022,54,4.38
+Research Grants,2022,55,3.77
+Research Grants,2022,56,3.55
+Research Grants,2022,57,2.36
+Research Grants,2023,1,9.83
+Research Grants,2023,2,9.33
+Research Grants,2023,3,8.96
+Research Grants,2023,4,8.91
+Research Grants,2023,5,8.72
+Research Grants,2023,6,8.55
+Research Grants,2023,7,8.52
+Research Grants,2023,8,8.5
+Research Grants,2023,9,8.45
+Research Grants,2023,10,8.4
+Research Grants,2023,11,8.35
+Research Grants,2023,12,8.34
+Research Grants,2023,13,8.25
+Research Grants,2023,14,8.21
+Research Grants,2023,15,8.2
+Research Grants,2023,16,8.06
+Research Grants,2023,17,7.93
+Research Grants,2023,18,7.91
+Research Grants,2023,19,7.83
+Research Grants,2023,20,7.77
+Research Grants,2023,21,7.76
+Research Grants,2023,22,7.76
+Research Grants,2023,23,7.72
+Research Grants,2023,24,7.7
+Research Grants,2023,25,7.65
+Research Grants,2023,26,7.63
+Research Grants,2023,27,7.54
+Research Grants,2023,28,7.43
+Research Grants,2023,29,7.41
+Research Grants,2023,30,7.34
+Research Grants,2023,31,7.27
+Research Grants,2023,32,7.18
+Research Grants,2023,33,7.11
+Research Grants,2023,34,7
+Research Grants,2023,35,6.96
+Research Grants,2023,36,6.8
+Research Grants,2023,37,6.77
+Research Grants,2023,38,6.76
+Research Grants,2023,39,6.74
+Research Grants,2023,40,6.7
+Research Grants,2023,41,6.7
+Research Grants,2023,42,6.69
+Research Grants,2023,43,6.59
+Research Grants,2023,44,6.59
+Research Grants,2023,45,6.57
+Research Grants,2023,46,6.52
+Research Grants,2023,47,6.48
+Research Grants,2023,48,6.45
+Research Grants,2023,49,6.37
+Research Grants,2023,50,6.35
+Research Grants,2023,51,6.35
+Research Grants,2023,52,6.32
+Research Grants,2023,53,6.32
+Research Grants,2023,54,6.28
+Research Grants,2023,55,6.22
+Research Grants,2023,56,6.15
+Research Grants,2023,57,6.15
+Research Grants,2023,58,6.13
+Research Grants,2023,59,6.13
+Research Grants,2023,60,6.1
+Research Grants,2023,61,6.09
+Research Grants,2023,62,6.07
+Research Grants,2023,63,6.07
+Research Grants,2023,64,6
+Research Grants,2023,65,5.85
+Research Grants,2023,66,5.8
+Research Grants,2023,67,5.68
+Research Grants,2023,68,5.66
+Research Grants,2023,69,5.61
+Research Grants,2023,70,5.59
+Research Grants,2023,71,5.34
+Research Grants,2023,72,5.22
+Research Grants,2023,73,5.13
+Research Grants,2023,74,5.09
+Research Grants,2023,75,5.04
+Research Grants,2023,76,5
+Research Grants,2023,77,5
+Research Grants,2023,78,5
+Research Grants,2023,79,4.84
+Research Grants,2023,80,4.67
+Research Grants,2023,81,2.67
+Research Grants,2023,82,2.5
+Research Grants,2024,1,9.23
+Research Grants,2024,2,9.09
+Research Grants,2024,3,8.96
+Research Grants,2024,4,8.85
+Research Grants,2024,5,8.7
+Research Grants,2024,6,8.69
+Research Grants,2024,7,8.65
+Research Grants,2024,8,8.63
+Research Grants,2024,9,8.6
+Research Grants,2024,9,8.6
+Research Grants,2024,11,8.54
+Research Grants,2024,12,8.52
+Research Grants,2024,13,8.5
+Research Grants,2024,14,8.44
+Research Grants,2024,15,8.35
+Research Grants,2024,16,8.31
+Research Grants,2024,17,8.28
+Research Grants,2024,18,8.19
+Research Grants,2024,19,8.15
+Research Grants,2024,20,7.94
+Research Grants,2024,21,7.92
+Research Grants,2024,22,7.85
+Research Grants,2024,23,7.73
+Research Grants,2024,24,7.42
+Research Grants,2024,24,7.42
+Research Grants,2024,26,7.15
+Research Grants,2024,27,7.04
+Research Grants,2024,28,6.96
+Research Grants,2024,29,6.92
+Research Grants,2024,30,6.9
+Research Grants,2024,31,6.88
+Research Grants,2024,32,6.82
+Research Grants,2024,33,6.77
+Research Grants,2024,34,6.75
+Research Grants,2024,35,6.65
+Research Grants,2024,36,6.6
+Research Grants,2024,37,6.58
+Research Grants,2024,38,6.58
+Research Grants,2024,39,6.56
+Research Grants,2024,40,6.5
+Research Grants,2024,41,6.39
+Research Grants,2024,42,6.35
+Research Grants,2024,43,6.28
+Research Grants,2024,44,6.21
+Research Grants,2024,45,6.1
+Research Grants,2024,46,6.1
+Research Grants,2024,47,6.02
+Research Grants,2024,48,5.96
+Research Grants,2024,49,5.85
+Research Grants,2024,50,5.83
+Research Grants,2024,51,5.81
+Research Grants,2024,52,5.65
+Research Grants,2024,53,5.63
+Research Grants,2024,54,5.6
+Research Grants,2024,55,5.48
+Research Grants,2024,56,5.44
+Research Grants,2024,57,5.38
+Research Grants,2024,58,5.13
+Research Grants,2024,59,4.98
+Research Grants,2024,60,4.94
+Research Grants,2024,61,4.83
+Research Grants,2024,62,4.55
+Research Grants,2024,63,4.5
+Research Grants,2024,64,4.48
+Research Grants,2024,65,4.02
+Research Grants,2025,1,9.4
+Research Grants,2025,2,9.3
+Research Grants,2025,3,8.9
+Research Grants,2025,4,8.9
+Research Grants,2025,5,8.8
+Research Grants,2025,6,8.8
+Research Grants,2025,7,8.7
+Research Grants,2025,7,8.7
+Research Grants,2025,9,8.6
+Research Grants,2025,10,8.5
+Research Grants,2025,11,8.5
+Research Grants,2025,12,8.3
+Research Grants,2025,13,8.3
+Research Grants,2025,14,8.3
+Research Grants,2025,15,8.1
+Research Grants,2025,16,8
+Research Grants,2025,16,8
+Research Grants,2025,18,8
+Research Grants,2025,19,8
+Research Grants,2025,20,7.9
+Research Grants,2025,21,7.8
+Research Grants,2025,22,7.8
+Research Grants,2025,23,7.7
+Research Grants,2025,24,7.7
+Research Grants,2025,25,7.7
+Research Grants,2025,26,7.6
+Research Grants,2025,27,7.5
+Research Grants,2025,28,7.4
+Research Grants,2025,29,7.3
+Research Grants,2025,30,7.1
+Research Grants,2025,31,7.1
+Research Grants,2025,32,7
+Research Grants,2025,33,7
+Research Grants,2025,34,7
+Research Grants,2025,35,6.9
+Research Grants,2025,35,6.9
+Research Grants,2025,37,6.9
+Research Grants,2025,38,6.9
+Research Grants,2025,39,6.9
+Research Grants,2025,40,6.5
+Research Grants,2025,41,6.5
+Research Grants,2025,42,6.4
+Research Grants,2025,43,6.4
+Research Grants,2025,44,6.4
+Research Grants,2025,45,6.3
+Research Grants,2025,46,6.3
+Research Grants,2025,47,6.3
+Research Grants,2025,48,6.1
+Research Grants,2025,49,6.1
+Research Grants,2025,50,6
+Research Grants,2025,51,6
+Research Grants,2025,52,6
+Research Grants,2025,53,5.9
+Research Grants,2025,54,5.8
+Research Grants,2025,55,5.7
+Research Grants,2025,56,5.7
+Research Grants,2025,57,5.5
+Research Grants,2025,58,5.5
+Research Grants,2025,59,5.5
+Research Grants,2025,60,5.4
+Research Grants,2025,61,5.3
+Research Grants,2025,62,5.2
+Research Grants,2025,63,5.2
+Research Grants,2025,64,5
+Research Grants,2025,65,5
+Research Grants,2025,65,5
+Research Grants,2025,67,5
+Research Grants,2025,68,4.3
+Research Grants,2025,69,4.1
+Research Grants,2025,70,4
+Postdoctoral Fellowships,2022,1,9.55
+Postdoctoral Fellowships,2022,2,9.41
+Postdoctoral Fellowships,2022,3,9.33
+Postdoctoral Fellowships,2022,4,9.32
+Postdoctoral Fellowships,2022,5,9.18
+Postdoctoral Fellowships,2022,6,9.09
+Postdoctoral Fellowships,2022,7,9.07
+Postdoctoral Fellowships,2022,8,8.87
+Postdoctoral Fellowships,2022,9,8.86
+Postdoctoral Fellowships,2022,10,8.76
+Postdoctoral Fellowships,2022,11,8.74
+Postdoctoral Fellowships,2022,12,8.7
+Postdoctoral Fellowships,2022,13,8.69
+Postdoctoral Fellowships,2022,14,8.65
+Postdoctoral Fellowships,2022,15,8.63
+Postdoctoral Fellowships,2022,16,8.57
+Postdoctoral Fellowships,2022,17,8.52
+Postdoctoral Fellowships,2022,18,8.43
+Postdoctoral Fellowships,2022,19,8.43
+Postdoctoral Fellowships,2022,20,8.36
+Postdoctoral Fellowships,2022,21,8.26
+Postdoctoral Fellowships,2022,22,8.2
+Postdoctoral Fellowships,2022,23,8.05
+Postdoctoral Fellowships,2022,24,7.93
+Postdoctoral Fellowships,2022,25,7.86
+Postdoctoral Fellowships,2022,26,7.84
+Postdoctoral Fellowships,2022,27,7.64
+Postdoctoral Fellowships,2022,28,7.59
+Postdoctoral Fellowships,2022,29,7.57
+Postdoctoral Fellowships,2022,30,7.52
+Postdoctoral Fellowships,2022,31,7.41
+Postdoctoral Fellowships,2022,32,7.3
+Postdoctoral Fellowships,2022,33,7.26
+Postdoctoral Fellowships,2022,34,7.18
+Postdoctoral Fellowships,2022,35,7.16
+Postdoctoral Fellowships,2022,36,7.11
+Postdoctoral Fellowships,2022,37,7.05
+Postdoctoral Fellowships,2022,38,7.02
+Postdoctoral Fellowships,2022,39,6.96
+Postdoctoral Fellowships,2022,40,6.93
+Postdoctoral Fellowships,2022,41,6.91
+Postdoctoral Fellowships,2022,42,6.91
+Postdoctoral Fellowships,2022,43,6.84
+Postdoctoral Fellowships,2022,44,6.83
+Postdoctoral Fellowships,2022,45,6.8
+Postdoctoral Fellowships,2022,46,6.8
+Postdoctoral Fellowships,2022,47,6.78
+Postdoctoral Fellowships,2022,48,6.73
+Postdoctoral Fellowships,2022,49,6.7
+Postdoctoral Fellowships,2022,50,6.68
+Postdoctoral Fellowships,2022,51,6.65
+Postdoctoral Fellowships,2022,52,6.59
+Postdoctoral Fellowships,2022,53,6.54
+Postdoctoral Fellowships,2022,54,6.5
+Postdoctoral Fellowships,2022,55,6.48
+Postdoctoral Fellowships,2022,56,6.46
+Postdoctoral Fellowships,2022,57,6.46
+Postdoctoral Fellowships,2022,58,6.39
+Postdoctoral Fellowships,2022,59,6.3
+Postdoctoral Fellowships,2022,60,6.25
+Postdoctoral Fellowships,2022,61,6.25
+Postdoctoral Fellowships,2022,62,6.22
+Postdoctoral Fellowships,2022,63,6.18
+Postdoctoral Fellowships,2022,64,6.16
+Postdoctoral Fellowships,2022,65,6.09
+Postdoctoral Fellowships,2022,66,6.07
+Postdoctoral Fellowships,2022,67,6.04
+Postdoctoral Fellowships,2022,68,6
+Postdoctoral Fellowships,2022,69,6
+Postdoctoral Fellowships,2022,70,6
+Postdoctoral Fellowships,2022,71,5.98
+Postdoctoral Fellowships,2022,72,5.98
+Postdoctoral Fellowships,2022,73,5.93
+Postdoctoral Fellowships,2022,74,5.89
+Postdoctoral Fellowships,2022,75,5.87
+Postdoctoral Fellowships,2022,76,5.73
+Postdoctoral Fellowships,2022,77,5.72
+Postdoctoral Fellowships,2022,78,5.62
+Postdoctoral Fellowships,2022,79,5.52
+Postdoctoral Fellowships,2022,80,5.45
+Postdoctoral Fellowships,2022,81,5.09
+Postdoctoral Fellowships,2022,82,5.07
+Postdoctoral Fellowships,2022,83,5.07
+Postdoctoral Fellowships,2022,84,5.07
+Postdoctoral Fellowships,2022,85,5.02
+Postdoctoral Fellowships,2022,86,5
+Postdoctoral Fellowships,2022,87,4.8
+Postdoctoral Fellowships,2022,88,4.24
+Postdoctoral Fellowships,2022,89,3.76
+Postdoctoral Fellowships,2023,1,9.18
+Postdoctoral Fellowships,2023,2,8.85
+Postdoctoral Fellowships,2023,3,8.83
+Postdoctoral Fellowships,2023,4,8.82
+Postdoctoral Fellowships,2023,5,8.81
+Postdoctoral Fellowships,2023,6,8.8
+Postdoctoral Fellowships,2023,7,8.76
+Postdoctoral Fellowships,2023,8,8.75
+Postdoctoral Fellowships,2023,9,8.73
+Postdoctoral Fellowships,2023,10,8.71
+Postdoctoral Fellowships,2023,11,8.65
+Postdoctoral Fellowships,2023,12,8.64
+Postdoctoral Fellowships,2023,13,8.57
+Postdoctoral Fellowships,2023,14,8.55
+Postdoctoral Fellowships,2023,15,8.52
+Postdoctoral Fellowships,2023,16,8.4
+Postdoctoral Fellowships,2023,17,8.35
+Postdoctoral Fellowships,2023,18,8.35
+Postdoctoral Fellowships,2023,19,8.3
+Postdoctoral Fellowships,2023,20,8.26
+Postdoctoral Fellowships,2023,21,8.18
+Postdoctoral Fellowships,2023,22,8.13
+Postdoctoral Fellowships,2023,23,7.88
+Postdoctoral Fellowships,2023,24,7.79
+Postdoctoral Fellowships,2023,25,7.78
+Postdoctoral Fellowships,2023,26,7.78
+Postdoctoral Fellowships,2023,27,7.73
+Postdoctoral Fellowships,2023,28,7.71
+Postdoctoral Fellowships,2023,29,7.7
+Postdoctoral Fellowships,2023,30,7.67
+Postdoctoral Fellowships,2023,31,7.66
+Postdoctoral Fellowships,2023,32,7.64
+Postdoctoral Fellowships,2023,33,7.63
+Postdoctoral Fellowships,2023,34,7.57
+Postdoctoral Fellowships,2023,35,7.52
+Postdoctoral Fellowships,2023,36,7.5
+Postdoctoral Fellowships,2023,37,7.48
+Postdoctoral Fellowships,2023,38,7.48
+Postdoctoral Fellowships,2023,39,7.43
+Postdoctoral Fellowships,2023,40,7.38
+Postdoctoral Fellowships,2023,41,7.35
+Postdoctoral Fellowships,2023,42,7.35
+Postdoctoral Fellowships,2023,43,7.35
+Postdoctoral Fellowships,2023,44,7.34
+Postdoctoral Fellowships,2023,45,7.32
+Postdoctoral Fellowships,2023,46,7.17
+Postdoctoral Fellowships,2023,47,7.05
+Postdoctoral Fellowships,2023,48,7
+Postdoctoral Fellowships,2023,49,6.98
+Postdoctoral Fellowships,2023,50,6.98
+Postdoctoral Fellowships,2023,51,6.95
+Postdoctoral Fellowships,2023,52,6.95
+Postdoctoral Fellowships,2023,53,6.93
+Postdoctoral Fellowships,2023,54,6.86
+Postdoctoral Fellowships,2023,55,6.83
+Postdoctoral Fellowships,2023,56,6.76
+Postdoctoral Fellowships,2023,57,6.69
+Postdoctoral Fellowships,2023,58,6.64
+Postdoctoral Fellowships,2023,59,6.48
+Postdoctoral Fellowships,2023,60,6.43
+Postdoctoral Fellowships,2023,61,6.4
+Postdoctoral Fellowships,2023,62,6.36
+Postdoctoral Fellowships,2023,63,6.33
+Postdoctoral Fellowships,2023,64,6.3
+Postdoctoral Fellowships,2023,65,6.28
+Postdoctoral Fellowships,2023,66,6.28
+Postdoctoral Fellowships,2023,67,6.25
+Postdoctoral Fellowships,2023,68,6.23
+Postdoctoral Fellowships,2023,69,6.18
+Postdoctoral Fellowships,2023,70,6.09
+Postdoctoral Fellowships,2023,71,6.05
+Postdoctoral Fellowships,2023,72,5.95
+Postdoctoral Fellowships,2023,73,5.93
+Postdoctoral Fellowships,2023,74,5.89
+Postdoctoral Fellowships,2023,75,5.88
+Postdoctoral Fellowships,2023,76,5.85
+Postdoctoral Fellowships,2023,77,5.76
+Postdoctoral Fellowships,2023,78,5.76
+Postdoctoral Fellowships,2023,79,5.68
+Postdoctoral Fellowships,2023,80,5.68
+Postdoctoral Fellowships,2023,81,5.57
+Postdoctoral Fellowships,2023,82,5.53
+Postdoctoral Fellowships,2023,83,5.43
+Postdoctoral Fellowships,2023,84,5.4
+Postdoctoral Fellowships,2023,85,5.39
+Postdoctoral Fellowships,2023,86,5.37
+Postdoctoral Fellowships,2023,87,5.36
+Postdoctoral Fellowships,2023,88,5.24
+Postdoctoral Fellowships,2023,89,5.13
+Postdoctoral Fellowships,2023,90,4.48
+Postdoctoral Fellowships,2023,91,4.17
+Postdoctoral Fellowships,2024,1,9.16
+Postdoctoral Fellowships,2024,2,9.15
+Postdoctoral Fellowships,2024,3,9
+Postdoctoral Fellowships,2024,4,8.93
+Postdoctoral Fellowships,2024,5,8.91
+Postdoctoral Fellowships,2024,6,8.8
+Postdoctoral Fellowships,2024,7,8.76
+Postdoctoral Fellowships,2024,8,8.71
+Postdoctoral Fellowships,2024,9,8.65
+Postdoctoral Fellowships,2024,10,8.59
+Postdoctoral Fellowships,2024,11,8.57
+Postdoctoral Fellowships,2024,12,8.39
+Postdoctoral Fellowships,2024,13,8.38
+Postdoctoral Fellowships,2024,14,8.35
+Postdoctoral Fellowships,2024,15,8.34
+Postdoctoral Fellowships,2024,16,8.28
+Postdoctoral Fellowships,2024,17,8.25
+Postdoctoral Fellowships,2024,18,8.15
+Postdoctoral Fellowships,2024,19,8
+Postdoctoral Fellowships,2024,20,7.97
+Postdoctoral Fellowships,2024,21,7.95
+Postdoctoral Fellowships,2024,22,7.95
+Postdoctoral Fellowships,2024,23,7.93
+Postdoctoral Fellowships,2024,24,7.91
+Postdoctoral Fellowships,2024,25,7.86
+Postdoctoral Fellowships,2024,26,7.86
+Postdoctoral Fellowships,2024,27,7.77
+Postdoctoral Fellowships,2024,28,7.75
+Postdoctoral Fellowships,2024,29,7.74
+Postdoctoral Fellowships,2024,30,7.71
+Postdoctoral Fellowships,2024,31,7.63
+Postdoctoral Fellowships,2024,32,7.61
+Postdoctoral Fellowships,2024,33,7.59
+Postdoctoral Fellowships,2024,34,7.57
+Postdoctoral Fellowships,2024,35,7.55
+Postdoctoral Fellowships,2024,36,7.37
+Postdoctoral Fellowships,2024,37,7.34
+Postdoctoral Fellowships,2024,38,7.33
+Postdoctoral Fellowships,2024,39,7.3
+Postdoctoral Fellowships,2024,40,7.3
+Postdoctoral Fellowships,2024,41,7.27
+Postdoctoral Fellowships,2024,42,7.26
+Postdoctoral Fellowships,2024,43,7.23
+Postdoctoral Fellowships,2024,44,7.16
+Postdoctoral Fellowships,2024,45,7.13
+Postdoctoral Fellowships,2024,46,7.07
+Postdoctoral Fellowships,2024,47,6.95
+Postdoctoral Fellowships,2024,48,6.93
+Postdoctoral Fellowships,2024,49,6.91
+Postdoctoral Fellowships,2024,50,6.88
+Postdoctoral Fellowships,2024,51,6.84
+Postdoctoral Fellowships,2024,52,6.82
+Postdoctoral Fellowships,2024,53,6.82
+Postdoctoral Fellowships,2024,54,6.77
+Postdoctoral Fellowships,2024,55,6.77
+Postdoctoral Fellowships,2024,56,6.75
+Postdoctoral Fellowships,2024,57,6.73
+Postdoctoral Fellowships,2024,58,6.72
+Postdoctoral Fellowships,2024,59,6.68
+Postdoctoral Fellowships,2024,60,6.68
+Postdoctoral Fellowships,2024,61,6.64
+Postdoctoral Fellowships,2024,62,6.64
+Postdoctoral Fellowships,2024,63,6.63
+Postdoctoral Fellowships,2024,64,6.61
+Postdoctoral Fellowships,2024,65,6.57
+Postdoctoral Fellowships,2024,66,6.55
+Postdoctoral Fellowships,2024,67,6.52
+Postdoctoral Fellowships,2024,68,6.52
+Postdoctoral Fellowships,2024,69,6.52
+Postdoctoral Fellowships,2024,70,6.5
+Postdoctoral Fellowships,2024,71,6.5
+Postdoctoral Fellowships,2024,72,6.5
+Postdoctoral Fellowships,2024,73,6.48
+Postdoctoral Fellowships,2024,74,6.48
+Postdoctoral Fellowships,2024,75,6.45
+Postdoctoral Fellowships,2024,76,6.42
+Postdoctoral Fellowships,2024,77,6.3
+Postdoctoral Fellowships,2024,78,6.26
+Postdoctoral Fellowships,2024,79,6.25
+Postdoctoral Fellowships,2024,80,6.23
+Postdoctoral Fellowships,2024,81,6.2
+Postdoctoral Fellowships,2024,82,6.18
+Postdoctoral Fellowships,2024,83,6.17
+Postdoctoral Fellowships,2024,84,6.11
+Postdoctoral Fellowships,2024,85,6.07
+Postdoctoral Fellowships,2024,86,6.07
+Postdoctoral Fellowships,2024,87,6.07
+Postdoctoral Fellowships,2024,88,6.05
+Postdoctoral Fellowships,2024,89,5.95
+Postdoctoral Fellowships,2024,90,5.86
+Postdoctoral Fellowships,2024,91,5.86
+Postdoctoral Fellowships,2024,92,5.84
+Postdoctoral Fellowships,2024,93,5.77
+Postdoctoral Fellowships,2024,94,5.67
+Postdoctoral Fellowships,2024,95,5.67
+Postdoctoral Fellowships,2024,96,5.39
+Postdoctoral Fellowships,2024,97,5.33
+Postdoctoral Fellowships,2024,98,5.33
+Postdoctoral Fellowships,2024,99,5.33
+Postdoctoral Fellowships,2024,100,5.3
+Postdoctoral Fellowships,2024,101,5.18
+Postdoctoral Fellowships,2024,102,5.15
+Postdoctoral Fellowships,2024,103,5.11
+Postdoctoral Fellowships,2024,104,5.1
+Postdoctoral Fellowships,2024,105,5.09
+Postdoctoral Fellowships,2024,106,4.67
+Postdoctoral Fellowships,2024,107,4.54
+Postdoctoral Fellowships,2024,108,4.33
+Postdoctoral Fellowships,2024,109,4.3
+Postdoctoral Fellowships,2024,110,4.22
+Postdoctoral Fellowships,2024,111,3.8
+Postdoctoral Fellowships,2025,1,9.54
+Postdoctoral Fellowships,2025,2,9.21
+Postdoctoral Fellowships,2025,3,9.14
+Postdoctoral Fellowships,2025,4,9.14
+Postdoctoral Fellowships,2025,5,9.04
+Postdoctoral Fellowships,2025,6,9.02
+Postdoctoral Fellowships,2025,7,8.94
+Postdoctoral Fellowships,2025,8,8.93
+Postdoctoral Fellowships,2025,9,8.89
+Postdoctoral Fellowships,2025,10,8.85
+Postdoctoral Fellowships,2025,11,8.75
+Postdoctoral Fellowships,2025,12,8.64
+Postdoctoral Fellowships,2025,13,8.57
+Postdoctoral Fellowships,2025,14,8.52
+Postdoctoral Fellowships,2025,15,8.5
+Postdoctoral Fellowships,2025,16,8.46
+Postdoctoral Fellowships,2025,17,8.44
+Postdoctoral Fellowships,2025,18,8.44
+Postdoctoral Fellowships,2025,19,8.41
+Postdoctoral Fellowships,2025,20,8.41
+Postdoctoral Fellowships,2025,21,8.35
+Postdoctoral Fellowships,2025,22,8.33
+Postdoctoral Fellowships,2025,23,8.3
+Postdoctoral Fellowships,2025,24,8.27
+Postdoctoral Fellowships,2025,25,8.27
+Postdoctoral Fellowships,2025,26,8.16
+Postdoctoral Fellowships,2025,27,8.16
+Postdoctoral Fellowships,2025,28,8.15
+Postdoctoral Fellowships,2025,29,8.13
+Postdoctoral Fellowships,2025,30,8.08
+Postdoctoral Fellowships,2025,31,8.02
+Postdoctoral Fellowships,2025,32,7.94
+Postdoctoral Fellowships,2025,33,7.91
+Postdoctoral Fellowships,2025,34,7.88
+Postdoctoral Fellowships,2025,35,7.83
+Postdoctoral Fellowships,2025,36,7.82
+Postdoctoral Fellowships,2025,37,7.73
+Postdoctoral Fellowships,2025,38,7.5
+Postdoctoral Fellowships,2025,39,7.34
+Postdoctoral Fellowships,2025,40,7.32
+Postdoctoral Fellowships,2025,41,7.29
+Postdoctoral Fellowships,2025,42,7.27
+Postdoctoral Fellowships,2025,43,7.21
+Postdoctoral Fellowships,2025,44,7.21
+Postdoctoral Fellowships,2025,45,7.19
+Postdoctoral Fellowships,2025,46,7.18
+Postdoctoral Fellowships,2025,47,7.14
+Postdoctoral Fellowships,2025,48,7.1
+Postdoctoral Fellowships,2025,49,7.09
+Postdoctoral Fellowships,2025,50,7.05
+Postdoctoral Fellowships,2025,51,7.04
+Postdoctoral Fellowships,2025,52,7.02
+Postdoctoral Fellowships,2025,53,7
+Postdoctoral Fellowships,2025,54,6.91
+Postdoctoral Fellowships,2025,55,6.9
+Postdoctoral Fellowships,2025,56,6.9
+Postdoctoral Fellowships,2025,57,6.88
+Postdoctoral Fellowships,2025,58,6.83
+Postdoctoral Fellowships,2025,59,6.8
+Postdoctoral Fellowships,2025,60,6.78
+Postdoctoral Fellowships,2025,61,6.75
+Postdoctoral Fellowships,2025,62,6.72
+Postdoctoral Fellowships,2025,63,6.71
+Postdoctoral Fellowships,2025,64,6.68
+Postdoctoral Fellowships,2025,65,6.64
+Postdoctoral Fellowships,2025,66,6.59
+Postdoctoral Fellowships,2025,67,6.59
+Postdoctoral Fellowships,2025,68,6.57
+Postdoctoral Fellowships,2025,69,6.54
+Postdoctoral Fellowships,2025,70,6.5
+Postdoctoral Fellowships,2025,71,6.46
+Postdoctoral Fellowships,2025,72,6.46
+Postdoctoral Fellowships,2025,73,6.42
+Postdoctoral Fellowships,2025,74,6.41
+Postdoctoral Fellowships,2025,75,6.41
+Postdoctoral Fellowships,2025,76,6.39
+Postdoctoral Fellowships,2025,77,6.38
+Postdoctoral Fellowships,2025,78,6.34
+Postdoctoral Fellowships,2025,79,6.34
+Postdoctoral Fellowships,2025,80,6.31
+Postdoctoral Fellowships,2025,81,6.29
+Postdoctoral Fellowships,2025,82,6.29
+Postdoctoral Fellowships,2025,83,6.27
+Postdoctoral Fellowships,2025,84,6.25
+Postdoctoral Fellowships,2025,85,6.24
+Postdoctoral Fellowships,2025,86,6.23
+Postdoctoral Fellowships,2025,87,6.21
+Postdoctoral Fellowships,2025,88,6.21
+Postdoctoral Fellowships,2025,89,6.2
+Postdoctoral Fellowships,2025,90,6.2
+Postdoctoral Fellowships,2025,91,6.17
+Postdoctoral Fellowships,2025,92,6.13
+Postdoctoral Fellowships,2025,93,6.02
+Postdoctoral Fellowships,2025,94,6.02
+Postdoctoral Fellowships,2025,95,5.94
+Postdoctoral Fellowships,2025,96,5.89
+Postdoctoral Fellowships,2025,97,5.85
+Postdoctoral Fellowships,2025,98,5.77
+Postdoctoral Fellowships,2025,99,5.77
+Postdoctoral Fellowships,2025,100,5.74
+Postdoctoral Fellowships,2025,101,5.64
+Postdoctoral Fellowships,2025,102,5.59
+Postdoctoral Fellowships,2025,103,5.48
+Postdoctoral Fellowships,2025,104,5.38
+Postdoctoral Fellowships,2025,105,5.35
+Postdoctoral Fellowships,2025,106,5.33
+Postdoctoral Fellowships,2025,107,5.07
+Postdoctoral Fellowships,2025,108,5
+Postdoctoral Fellowships,2025,109,4.91
+Postdoctoral Fellowships,2025,110,4.89
+Postdoctoral Fellowships,2025,111,4.8
+Postdoctoral Fellowships,2025,112,4.59
+Postdoctoral Fellowships,2025,113,4.56
+Postdoctoral Fellowships,2025,114,4.39
+Postdoctoral Fellowships,2025,115,4.2
+Postdoctoral Fellowships,2025,116,3.96
+Postdoctoral Fellowships,2025,117,3
