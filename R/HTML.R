@@ -36,7 +36,10 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retin
 #'
 #' - [`data_MSCA.csv`](https://github.com/MartinBulla/correspondence_funding/blob/main/Data/data_MSCA.csv): contains cumulative score distributions for the EU *Marie Skłodowska-Curie Actions Postdoctoral Fellowships* for each evaluation panel (abbreviated as "ST-CHE" = "Chemistry", "ST-ECO" = "Economics", "ST-ENG" = "Informat. & Engineering", "ST-ENV" = "Envi. Sci. & Geosciences", "ST-LIF" = "Life Sciences", "ST-MAT" = "Mathematics", "ST-PHY" = "Physics", "ST-SOC" = "Social Sci. & Humanities") and call year (2018–2025), with the following columns: `Year` (of the call) and `Score` (0–100%); the remaining columns are abbreviations for each panel and contain percentages of proposals scoring at or above the given `Score`.
 #'  <span style="display:block; margin-top:0.4em;">
-#' The data were aggregated from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/), which contains the official "Flash information on the overall results of the call". These reports are published annually by the European Research Executive Agency following the conclusion of the evaluation process. While individual project scores are confidential, these public summaries provide the aggregate percentages of proposals meeting or exceeding specific quality thresholds. The proposals are scored on a scale from 0 to 100%. **To access the raw reports**: (i) navigate to the EU Funding & Tenders Portal → Funding → Calls for proposals, (ii) in the Quick search field, enter the specific call name (e.g. HORIZON-MSCA-2024-PF-01-01), (iii) look for the data, usually under the "Topic conditions and documents" or "Updates" section.
+#' The data were aggregated from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/), which contains the official "Flash information on the overall results of the call". These reports are published annually by the European Research Executive Agency following the conclusion of the evaluation process. While individual project scores are confidential, these public summaries provide the aggregate percentages of proposals meeting or exceeding specific quality thresholds. The proposals are scored on a scale from 0 to 100%.
+#'  </span>
+#'  <span style="display:block; margin-top:0.4em;">
+#'  To access the raw reports: (i) navigate to the EU Funding & Tenders Portal → Funding → Calls for proposals, (ii) in the Quick search field, enter the specific call name (e.g. HORIZON-MSCA-2024-PF-01-01), (iii) look for the data, usually under the "Topic conditions and documents" or "Updates" section.
 #'  </span>
 #'  <span style="display:block; margin-top:0.4em;">
 #'  *Marie Skłodowska-Curie Actions Postdoctoral Fellowships* are evaluated as full proposals submitted jointly by the researcher and host organisation through the EU Funding & Tenders Portal. Eligible proposals are assessed after the call deadline (in September for the 2025 call) by at least three independent external experts against the *Marie Skłodowska-Curie Actions* award criteria: Excellence, Impact, and Quality and Efficiency of Implementation. Experts first evaluate proposals individually and then agree on consensus scores and comments, which form the basis of the Evaluation Summary Report and final ranking. The *Marie Skłodowska-Curie Actions* score distributions analysed here therefore represent eligible full proposals evaluated through this single-stage full-proposal procedure, rather than applications pre-selected through an initial short-proposal stage.
@@ -400,8 +403,7 @@ knitr::include_graphics(here::here("Output/Fig_2_width-85mm.png"))
 #'
 #' # Session info
 
-#' <a name="T_2">
-#' **Table S1 | System session info.** </a>
+# Table S1: System session info.
 df_session_platform <- devtools::session_info()$platform %>%
   unlist(.) %>%
   as.data.frame(.) %>%
@@ -410,11 +412,15 @@ df_session_platform <- devtools::session_info()$platform %>%
 colnames(df_session_platform) <- c("Item", "Value")
 
 df_session_platform %>%
-  kbl(align=c('r', 'l'), linesep = "") %>%
+  kbl(
+    caption = "Table S1 | System session info.",
+    align=c('r', 'l'),
+    linesep = "",
+    table.attr = 'id="T_S1"'
+  ) %>%
   kable_paper(c("striped", "condensed"), full_width = F, position = "left")
-#'
-#' <a name="T_S2">
-#' **Table S2 | Info about used packages.** </a>
+
+# Table S2: Info about used packages.
 df_session_packages <- devtools::session_info()$packages %>%
   as.data.frame(.) %>%
   # filter(attached == TRUE) %>%
@@ -423,7 +429,12 @@ df_session_packages <- devtools::session_info()$packages %>%
 
 colnames(df_session_packages) <- c("Package", "Loaded version", "Date", "Source")
 df_session_packages %>%
-  kbl(align = c("l", "l","l","l"), linesep = "") %>%
+  kbl(
+    caption = "Table S2 | Info about used packages.",
+    align = c("l", "l","l","l"),
+    linesep = "",
+    table.attr = 'id="T_S2"'
+  ) %>%
   kable_paper(c("striped", "condensed"), full_width = F, position = "left") %>%
   scroll_box(height = "650px") #width = "90%",
 #'

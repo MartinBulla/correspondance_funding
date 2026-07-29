@@ -1836,7 +1836,7 @@ scientific excellence?</font></h1>
 <h4 class="author"><font size="2">Martin Bulla and Peter
 Mikula</font><br><br><font size="2">created by Martin
 Bulla</font><br></h4>
-<h4 class="date"><font size="1.5">2026-07-29 09:31:05.803089</font></h4>
+<h4 class="date"><font size="1.5">2026-07-29 09:47:05.809826</font></h4>
 
 </div>
 
@@ -1881,13 +1881,13 @@ published annually by the European Research Executive Agency following
 the conclusion of the evaluation process. While individual project
 scores are confidential, these public summaries provide the aggregate
 percentages of proposals meeting or exceeding specific quality
-thresholds. The proposals are scored on a scale from 0 to 100%.
-<strong>To access the raw reports</strong>: (i) navigate to the EU
-Funding &amp; Tenders Portal → Funding → Calls for proposals, (ii) in
-the Quick search field, enter the specific call name
-(e.g. HORIZON-MSCA-2024-PF-01-01), (iii) look for the data, usually
-under the “Topic conditions and documents” or “Updates” section. </span>
-<span style="display:block; margin-top:0.4em;"> <em>Marie
+thresholds. The proposals are scored on a scale from 0 to 100%. </span>
+<span style="display:block; margin-top:0.4em;"> To access the raw
+reports: (i) navigate to the EU Funding &amp; Tenders Portal → Funding →
+Calls for proposals, (ii) in the Quick search field, enter the specific
+call name (e.g. HORIZON-MSCA-2024-PF-01-01), (iii) look for the data,
+usually under the “Topic conditions and documents” or “Updates” section.
+</span> <span style="display:block; margin-top:0.4em;"> <em>Marie
 Skłodowska-Curie Actions Postdoctoral Fellowships</em> are evaluated as
 full proposals submitted jointly by the researcher and host organisation
 through the EU Funding &amp; Tenders Portal. Eligible proposals are
@@ -2306,9 +2306,8 @@ n<sub>2025</sub> = 70 (956). Data are available via <span class="citation">(<a h
 </div>
 <div id="session-info" class="section level1">
 <h1>Session info</h1>
-<p><a name="T_2"> <strong>Table S1 | System session info.</strong>
-</a></p>
-<pre class="r"><code>df_session_platform &lt;- devtools::session_info()$platform %&gt;%
+<pre class="r"><code># Table S1: System session info.
+df_session_platform &lt;- devtools::session_info()$platform %&gt;%
   unlist(.) %&gt;%
   as.data.frame(.) %&gt;%
   rownames_to_column(.)
@@ -2316,9 +2315,17 @@ n<sub>2025</sub> = 70 (956). Data are available via <span class="citation">(<a h
 colnames(df_session_platform) &lt;- c(&quot;Item&quot;, &quot;Value&quot;)
 
 df_session_platform %&gt;%
-  kbl(align=c(&#39;r&#39;, &#39;l&#39;), linesep = &quot;&quot;) %&gt;%
+  kbl(
+    caption = &quot;Table S1 | System session info.&quot;,
+    align=c(&#39;r&#39;, &#39;l&#39;),
+    linesep = &quot;&quot;,
+    table.attr = &#39;id=&quot;T_S1&quot;&#39;
+  ) %&gt;%
   kable_paper(c(&quot;striped&quot;, &quot;condensed&quot;), full_width = F, position = &quot;left&quot;)</code></pre>
-<table class=" lightable-paper lightable-striped" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; ">
+<table id="T_S1" class=" lightable-paper lightable-striped" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; ">
+<caption>
+Table S1 | System session info.
+</caption>
 <thead>
 <tr>
 <th style="text-align:right;">
@@ -2420,9 +2427,8 @@ NA
 </tr>
 </tbody>
 </table>
-<p><a name="T_S2"> <strong>Table S2 | Info about used packages.</strong>
-</a></p>
-<pre class="r"><code>df_session_packages &lt;- devtools::session_info()$packages %&gt;%
+<pre class="r"><code># Table S2: Info about used packages.
+df_session_packages &lt;- devtools::session_info()$packages %&gt;%
   as.data.frame(.) %&gt;%
   # filter(attached == TRUE) %&gt;%
   dplyr::select(loadedversion, date, source) %&gt;%
@@ -2430,11 +2436,19 @@ NA
 
 colnames(df_session_packages) &lt;- c(&quot;Package&quot;, &quot;Loaded version&quot;, &quot;Date&quot;, &quot;Source&quot;)
 df_session_packages %&gt;%
-  kbl(align = c(&quot;l&quot;, &quot;l&quot;,&quot;l&quot;,&quot;l&quot;), linesep = &quot;&quot;) %&gt;%
+  kbl(
+    caption = &quot;Table S2 | Info about used packages.&quot;,
+    align = c(&quot;l&quot;, &quot;l&quot;,&quot;l&quot;,&quot;l&quot;),
+    linesep = &quot;&quot;,
+    table.attr = &#39;id=&quot;T_S2&quot;&#39;
+  ) %&gt;%
   kable_paper(c(&quot;striped&quot;, &quot;condensed&quot;), full_width = F, position = &quot;left&quot;) %&gt;%
   scroll_box(height = &quot;650px&quot;) #width = &quot;90%&quot;,</code></pre>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:650px; ">
-<table class=" lightable-paper lightable-striped" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; ">
+<table id="T_S2" class=" lightable-paper lightable-striped" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; ">
+<caption>
+Table S2 | Info about used packages.
+</caption>
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
