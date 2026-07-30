@@ -52,6 +52,9 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retin
 #'  <span style="display:block; margin-top:0.4em;">
 #'  The Human Frontier Science Program evaluates both schemes through a two-stage procedure. Applicants first submit a short Letter of Intent (deadline in spring), on the basis of which scheme-specific committees select applicants invited to submit a Full Proposal (deadline in September). The score distributions analysed here therefore represent only shortlisted applications that advanced to the Full Proposal stage, not the full applicant pool.
 #'  </span>
+#'  <span style="display:block; margin-top:0.4em;">
+#'  Note that the Postdoctoral Fellowships data include applications to the Long-Term Fellowships scheme, for applicants with a PhD in a biological discipline who wish to undertake a novel, frontier project in the life sciences, but not applications to the Cross-Disciplinary Fellowships scheme, which makes only approximately five awards per year. Similarly, the Research Grants data include applications to the Program scheme, but not to the Early Career scheme, which usually makes fewer than 10 awards per year.
+#'  </span>
 #'
 #' [**R**](https://github.com/MartinBulla/correspondence_funding/tree/main/R) folder stores scripts used in the analysis:
 #'
