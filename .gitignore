@@ -1,0 +1,27 @@
+# Ignore everything at the repository root
+/*
+
+# Track selected root files
+!/.gitignore
+!/README.md
+!LICENSE.txt
+!LICENSE
+!CITATION.cff
+!index.html
+
+# Track selected folders
+!/Data/
+!/R/
+!/Output/
+!/Resources/
+
+# Ignore freeze folders anywhere inside the repository
+**/freeze/
+
+# Ignore macOS metadata anywhere
+**/.DS_Store
+
+# Ignore manuscript/material folders anywhere
+**/MS/
+
+# end
