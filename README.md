@@ -21,17 +21,17 @@ When referring to or reusing these materials, **please cite** the corresponding 
   Note that the Postdoctoral Fellowships data include applications to the Long-Term Fellowships scheme, for applicants with a PhD in a biological discipline who wish to undertake a novel, frontier project in the life sciences, but not applications to the Cross-Disciplinary Fellowships scheme, which makes only approximately five awards per year. Similarly, the Research Grants data include applications to the Program scheme, but not to the Early Career scheme, which usually makes fewer than 10 awards per year.
 
 [**R**](https://github.com/MartinBulla/correspondence_funding/tree/main/R) folder stores scripts used in the analysis:
- - [`_runRmarkdown.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/_runRmarkdown.R) generates the HTML [Supporting information](https://martinbulla.github.io/correspondence_funding/) from [`HTML.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R).
- - [`HTML.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R) is the script behind the [HTML](https://martinbulla.github.io/correspondence_funding/), containing all code used to generate the paper outputs.
+ - [`_runRmarkdown.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/_runRmarkdown.R) generates the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/) from [`HTML.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R).
+ - [`HTML.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R) is the script behind the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/), containing all code used to generate the paper outputs.
 
 [**Output**](https://github.com/MartinBulla/correspondence_funding/tree/main/Output) folder stores separate files of all outputs used in the manuscript:
- - [HTML](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/HTML.html)
+ - [HTML.html](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/HTML.html)
  - [Fig_1.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_1_width-185mm.png)
- - [Fig_2.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_2_width-60mm.png)
+ - [Fig_2.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_2_width-85mm.png)
 
 [**Resources**](https://github.com/MartinBulla/correspondence_funding/tree/main/Resources) folder stores:
- - [`_bib.bib`](https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/_bib.bib) bibliography used in the [HTML](https://martinbulla.github.io/correspondence_funding/).
- - [`styles.css`](https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/styles.css) defines graphical parameters for the HTML generation.
+ - [`_bib.bib`](https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/_bib.bib) bibliography used in the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/).
+ - [`styles.css`](https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/styles.css) defines graphical parameters for the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/) generation.
 
 ### License and reuse
 
@@ -43,4 +43,4 @@ When referring to or reusing these materials, **please cite** the corresponding 
 
 ***
 
-<a name="1"></a>(1) Martin Bulla & Peter Mikula (2026). *Supporting information for 'Can grant evaluation still distinguish scientific excellence?'*, GitHub, [https://github.com/MartinBulla/correspondence_funding](https://github.com/MartinBulla/correspondence_funding)
+<a name="1"></a>(1) Martin Bulla & Peter Mikula (2026). *Supporting information for 'Can grant evaluation still distinguish scientific excellence?'*, GitHub, https://martinbulla.github.io/correspondence_funding/

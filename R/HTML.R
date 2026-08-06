@@ -23,14 +23,14 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retin
 
 #' # General note
 #'
-#' This HTML accompanies our paper 'Can grant evaluation still distinguish scientific excellence?' by navigating the repository with data and scripts, describing the data, and showing display items along with the code that generated them (accessible by clicking the `code` button at the top right above each display item).
+#' This HTML Supporting information accompanies our paper 'Can grant evaluation still distinguish scientific excellence?' by navigating the repository with data and scripts, describing the data, and showing display items along with the code that generated them (accessible by clicking the `code` button at the top right above each display item).
 #'
 #'
 #' When referring to or reusing these materials, **please cite** the corresponding preprint [@bulla2026a] and this repository [@bulla2026b].
 #'
 #' ## Repository contents
 #'
-#' [**HTML Supporting information**, including code](https://martinbulla.github.io/correspondence_funding) is generated from the following repository structure:
+#' This HTML Supporting information is generated from the following repository structure:
 #'
 #' [**Data**](https://github.com/MartinBulla/correspondence_funding/tree/main/Data) folder stores:
 #'
@@ -58,19 +58,19 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retin
 #'
 #' [**R**](https://github.com/MartinBulla/correspondence_funding/tree/main/R) folder stores scripts used in the analysis:
 #'
-#' - [`_runRmarkdown.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/_runRmarkdown.R) generates the HTML [Supporting information](https://martinbulla.github.io/correspondence_funding/) from [`HTML.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R).
-#' - [`HTML.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R) is the script behind the [HTML](https://martinbulla.github.io/correspondence_funding/), containing all code used to generate the paper outputs.
+#' - [`_runRmarkdown.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/_runRmarkdown.R) generates this HTML Supporting information from [`HTML.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R).
+#' - [`HTML.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R) is the script behind this HTML Supporting information, containing all code used to generate the paper outputs.
 #'
 #' [**Output**](https://github.com/MartinBulla/correspondence_funding/tree/main/Output) folder stores separate files of all outputs used in the manuscript:
 #'
-#' - [HTML](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/HTML.html)
+#' - [HTML.html](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/HTML.html)
 #' - [Fig_1.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_1_width-185mm.png)
-#' - [Fig_2.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_2_width-60mm.png)
+#' - [Fig_2.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_2_width-85mm.png)
 #'
 #' [**Resources**](https://github.com/MartinBulla/correspondence_funding/tree/main/Resources) folder stores:
 #'
-#' - [`_bib.bib`](https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/_bib.bib) bibliography used in the [HTML](https://martinbulla.github.io/correspondence_funding/).
-#' - [`styles.css`](https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/styles.css) defines graphical parameters for the HTML generation.
+#' - [`_bib.bib`](https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/_bib.bib) bibliography used in this HTML Supporting information
+#' - [`styles.css`](https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/styles.css) defines graphical parameters for this HTML Supporting information generation.
 #'
 #' ### License and reuse
 #'
@@ -313,7 +313,7 @@ knitr::include_graphics(here::here("Output/Fig_1_width-185mm.png"))
 #' <a name="F_1">**Figure 1</a> | Temporal shift and score compression in evaluations of Marie Skłodowska-Curie Actions postdoctoral fellowships.** **a**, Temporal trend in the percentage of proposals scoring at or above threshold across evaluation panels. The 2025 cohort (yellow) shows a marked divergence from the tightly clustered historical distribution (2018–2024), shifting toward higher scores across all deciles. For example, the 85% ‘Seal of Excellence’ threshold was reached by ~`r dt_long[Score%in%85 & Year == 2025, round(median(applications))]`% of proposals in 2025, compared to ~`r dt_long[Score%in%85 & Year!=2025, round(median(applications))]`% in previous years (medians). n~2018~ = 9,830 applications, n~2019~ = 9,875, n~2020~ = 11,573, n~2021~  = 8,356, n~2022~ = 7,044, n~2023~ = 8,039, n~2024~ = 10,360, n~2025~ = 17,066. **b**, Temporal trend of "excellence saturation", defined as the percentage of proposals achieving a score ≥95%. Data extracted from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/) and available via [@bulla2026b].
 #'
 
-#+ F_2, fig.width=8.5/2.5, fig.height = 4/2.5
+#+ F_2, out.width='46%', fig.align='left'
 
 # colors
 year_cols <- setNames(
