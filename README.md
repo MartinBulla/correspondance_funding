@@ -6,7 +6,7 @@ When referring to or reusing these materials, **please cite** the corresponding 
 
 ### **Repository contents**
 
-[**HTML Supporting information**, including code](https://martinbulla.github.io/correspondence_funding) is generated from the following repository structure:
+[**HTML Supporting information**](https://martinbulla.github.io/correspondence_funding) (including code) is generated from the following repository structure:
 
 [Data](https://github.com/MartinBulla/correspondence_funding/tree/main/Data/) folder stores:
 
