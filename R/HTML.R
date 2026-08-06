@@ -26,7 +26,7 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retin
 #' This HTML accompanies our paper 'Can grant evaluation still distinguish scientific excellence?' by navigating the repository with data and scripts, describing the data, and showing display items along with the code that generated them (accessible by clicking the `code` button at the top right above each display item).
 #'
 #'
-#' When referring to or reusing these materials, **please cite** the corresponding [preprint](https://doi.org/10.31222/osf.io/d8gcu_v1) [@bulla2026a] and this repository [@bulla2026b].
+#' When referring to or reusing these materials, **please cite** the corresponding preprint [@bulla2026a] and this repository [@bulla2026b].
 #'
 #' ## Repository contents
 #'

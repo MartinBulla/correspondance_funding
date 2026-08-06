@@ -2,7 +2,7 @@
 
 ## Data and R-script behind "Can grant evaluation still distinguish scientific excellence?”
 
-When referring to or reusing these materials, **please cite** the corresponding [preprint](https://doi.org/10.31222/osf.io/d8gcu_v1) and this repository [<sup>1</sup>](#1).
+When referring to or reusing these materials, **please cite** the corresponding [preprint](https://doi.org/10.31222/osf.io/d8gcu_v2) and this repository [<sup>1</sup>](#1).
 
 ### **Repository contents**
 
