@@ -12,7 +12,7 @@
 #'         code_folding: hide
 #'         link-citations: yes
 #'         css: ../Resources/styles.css
-#' base:  href="/[correspondence_funding]/"
+#'         self_contained: true
 #' ---
 
 #' <style> body {text-align: justify}</style>
@@ -21,20 +21,40 @@
 #+ r setup, include=FALSE
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retina = 1)
 
+if (!exists("repo_version")) {
+  stop("repo_version was not supplied by _runRmarkdown.R")
+}
+
+repo_url <- "https://github.com/MartinBulla/correspondence_funding"
+pages_url <- "https://martinbulla.github.io/correspondence_funding/"
+
+repo_tree <- paste0(repo_url, "/tree/", repo_version)
+repo_blob <- paste0(repo_url, "/blob/", repo_version)
+versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
+
 #' # General note
 #'
 #' This HTML Supporting information accompanies our paper 'Can grant evaluation still distinguish scientific excellence?' by navigating the repository with data and scripts, describing the data, and showing display items along with the code that generated them (accessible by clicking the `code` button at the top right above each display item).
 #'
-#'
+
 #' When referring to or reusing these materials, **please cite** the corresponding preprint [@bulla2026a] and this repository [@bulla2026b].
+#'
+
+#' ## Version and reproducibility
+#'
+#' - [`r repo_version`](`r paste0(repo_url, "/tree/", repo_version)`): Current repository version, archived for reproducibility of preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2). The current frozen [HTML Supporting Information](`r versioned_si`)
+#' - [v1.0.0](`r paste0(repo_url, "/tree/v1.0.0")`): First public repository release, archived for reproducibility of preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
+
 #'
 #' ## Repository contents
 #'
 #' This HTML Supporting information is generated from the following repository structure:
 #'
-#' [**Data**](https://github.com/MartinBulla/correspondence_funding/tree/main/Data) folder stores:
+
+#' [**Data**](`r paste0(repo_tree, "/Data")`) folder stores:
 #'
-#' - [`data_MSCA.csv`](https://github.com/MartinBulla/correspondence_funding/blob/main/Data/data_MSCA.csv): contains cumulative score distributions for the EU *Marie Skłodowska-Curie Actions Postdoctoral Fellowships* for each evaluation panel (abbreviated as "ST-CHE" = "Chemistry", "ST-ECO" = "Economics", "ST-ENG" = "Informat. & Engineering", "ST-ENV" = "Envi. Sci. & Geosciences", "ST-LIF" = "Life Sciences", "ST-MAT" = "Mathematics", "ST-PHY" = "Physics", "ST-SOC" = "Social Sci. & Humanities") and call year (2018–2025), with the following columns: `Year` (of the call) and `Score` (0–100%); the remaining columns are abbreviations for each panel and contain percentages of proposals scoring at or above the given `Score`.
+
+#' - [`data_MSCA.csv`](`r paste0(repo_blob, "/Data/data_MSCA.csv")`): contains cumulative score distributions for the EU *Marie Skłodowska-Curie Actions Postdoctoral Fellowships* for each evaluation panel (abbreviated as "ST-CHE" = "Chemistry", "ST-ECO" = "Economics", "ST-ENG" = "Informat. & Engineering", "ST-ENV" = "Envi. Sci. & Geosciences", "ST-LIF" = "Life Sciences", "ST-MAT" = "Mathematics", "ST-PHY" = "Physics", "ST-SOC" = "Social Sci. & Humanities") and call year (2018–2025), with the following columns: `Year` (of the call) and `Score` (0–100%); the remaining columns are abbreviations for each panel and contain percentages of proposals scoring at or above the given `Score`.
 #'  <span style="display:block; margin-top:0.4em;">
 #' The data were aggregated from the [EU Funding & Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/), which contains the official "Flash information on the overall results of the call". These reports are published annually by the European Research Executive Agency following the conclusion of the evaluation process. While individual project scores are confidential, these public summaries provide the aggregate percentages of proposals meeting or exceeding specific quality thresholds. The proposals are scored on a scale from 0 to 100%.
 #'  </span>
@@ -45,7 +65,8 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retin
 #'  *Marie Skłodowska-Curie Actions Postdoctoral Fellowships* are evaluated as full proposals submitted jointly by the researcher and host organisation through the EU Funding & Tenders Portal. Eligible proposals are assessed after the call deadline (in September for the 2025 call) by at least three independent external experts against the *Marie Skłodowska-Curie Actions* award criteria: Excellence, Impact, and Quality and Efficiency of Implementation. Experts first evaluate proposals individually and then agree on consensus scores and comments, which form the basis of the Evaluation Summary Report and final ranking. The *Marie Skłodowska-Curie Actions* score distributions analysed here therefore represent eligible full proposals evaluated through this single-stage full-proposal procedure, rather than applications pre-selected through an initial short-proposal stage.
 #'  </span>
 #'
-#' - [`data_HFSP.csv`](https://github.com/MartinBulla/correspondence_funding/blob/main/Data/data_HFSP.csv): contains anonymized evaluation-score data for Full Proposals submitted to the [Postdoctoral Fellowships](https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships) and [Research Grants](https://www.hfsp.org/funding/hfsp-funding/research-grants) schemes of the [*Human Frontier Science Program*](https://www.hfsp.org) for 2022–2025, with the following columns: `scheme` (funding scheme), `year` (of the call), `rank` (of the application in the given scheme and year) and `score` (evaluation score; 1–10).
+
+#' - [`data_HFSP.csv`](`r paste0(repo_blob, "/Data/data_HFSP.csv")`): contains anonymized evaluation-score data for Full Proposals submitted to the [Postdoctoral Fellowships](https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships) and [Research Grants](https://www.hfsp.org/funding/hfsp-funding/research-grants) schemes of the [*Human Frontier Science Program*](https://www.hfsp.org) for 2022–2025, with the following columns: `scheme` (funding scheme), `year` (of the call), `rank` (of the application in the given scheme and year) and `score` (evaluation score; 1–10).
 #'  <span style="display:block; margin-top:0.4em;">
 #'  These non-public data were kindly provided by the *Human Frontier Science Program*. We transformed the scores into percentages, with 10 representing 100%, and, to match Fig. 1, calculated the percentage of evaluated proposals scoring at or above each percentage threshold.
 #'  </span>
@@ -56,33 +77,29 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retin
 #'  Note that the Postdoctoral Fellowships data include applications to the Long-Term Fellowships scheme, for applicants with a PhD in a biological discipline who wish to undertake a novel, frontier project in the life sciences, but not applications to the Cross-Disciplinary Fellowships scheme, which makes only approximately five awards per year. Similarly, the Research Grants data include applications to the Program scheme, but not to the Early Career scheme, which usually makes fewer than 10 awards per year.
 #'  </span>
 #'
-#' [**R**](https://github.com/MartinBulla/correspondence_funding/tree/main/R) folder stores scripts used in the analysis:
+#' [**R**](`r paste0(repo_tree, "/R")`)  folder stores scripts used in the analysis:
 #'
-#' - [`_runRmarkdown.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/_runRmarkdown.R) generates this HTML Supporting information from [`HTML.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R).
-#' - [`HTML.R`](https://github.com/MartinBulla/correspondence_funding/blob/main/R/HTML.R) is the script behind this HTML Supporting information, containing all code used to generate the paper outputs.
+#' - [`_runRmarkdown.R`](`r paste0(repo_blob, "/R/_runRmarkdown.R")`) generates this HTML Supporting information from [`HTML.R`](`r paste0(repo_blob, "/R/HTML.R")`).
+#' - [`HTML.R`](`r paste0(repo_blob, "/R/HTML.R")`) is the script behind this HTML Supporting information, containing all code used to generate the paper outputs.
 #'
-#' [**Output**](https://github.com/MartinBulla/correspondence_funding/tree/main/Output) folder stores separate files of all outputs used in the manuscript:
+
+#' [**Output**](`r paste0(repo_tree, "/Output")`)  folder stores separate files of all outputs used in the manuscript:
 #'
-#' - [HTML.html](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/HTML.html)
-#' - [Fig_1.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_1_width-185mm.png)
-#' - [Fig_2.png](https://github.com/MartinBulla/correspondence_funding/blob/main/Output/Fig_2_width-85mm.png)
+#' - [HTML.html](`r paste0(repo_blob, "/Output/HTML.html")`)
+#' - [Fig_1.png](`r paste0(repo_blob, "/Output/Fig_1_width_185mm.png")`)
+#' - [Fig_2.png](`r paste0(repo_blob, "/Output/Fig_2_width-85mm.png")`)
 #'
-#' [**Resources**](https://github.com/MartinBulla/correspondence_funding/tree/main/Resources) folder stores:
+
+#' [**Resources**](`r paste0(repo_tree, "/Resources")`) folder stores:
 #'
-#' - [`_bib.bib`](https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/_bib.bib) bibliography used in this HTML Supporting information
-#' - [`styles.css`](https://github.com/MartinBulla/correspondence_funding/blob/main/Resources/styles.css) defines graphical parameters for this HTML Supporting information generation.
+#' - [`_bib.bib`](`r paste0(repo_blob, "/Resources/_bib.bib")`) bibliography used in this HTML Supporting information
+#' - [`styles.css`](`r paste0(repo_blob, "/Resources/styles.css")`) defines graphical parameters for this HTML Supporting information generation.
 #'
+
 #' ### License and reuse
 #'
-#'*Author-generated materials* in this repository, including collated data, derived data, scripts, figures, outputs and HTML, are licensed under the Creative Commons Attribution 4.0 International License [CC-BY-4.0](https://github.com/MartinBulla/correspondence_funding/blob/main/LICENSE).
+#'*Author-generated materials* in this repository, including collated data, derived data, scripts, figures, outputs and HTML, are licensed under the Creative Commons Attribution 4.0 International License [CC-BY-4.0](`r paste0(repo_blob, "/LICENSE")`)
 #'
-#'
-#' ### Version history
-#'
-#' - v1.0.0: The first public release of the [`correspondence_funding`](https://github.com/MartinBulla/correspondence_funding/) repository, archived for reproducibility of the first preprint version.
-#' - v2.0.0: Archived for reproducibility of the second preprint version.
-
-
 #'
 #' ***
 
