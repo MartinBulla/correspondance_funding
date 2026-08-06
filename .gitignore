@@ -2,8 +2,8 @@
 /*
 
 # Track selected root files
-!/.gitignore
-!/README.md
+!.gitignore
+!README.md
 !LICENSE.txt
 !LICENSE
 !CITATION.cff
