@@ -15,13 +15,13 @@
 !/Output/
 !/Resources/
 
-# Ignore freeze folders anywhere inside the repository
-**/freeze/
+# Ignore freeze folders anywhere
+freeze/
 
 # Ignore macOS metadata anywhere
-**/.DS_Store
+.DS_Store
 
 # Ignore manuscript/material folders anywhere
-**/MS/
+MS/
 
 # end
