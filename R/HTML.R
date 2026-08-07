@@ -37,15 +37,16 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 #' This HTML Supporting information accompanies our paper 'Can grant evaluation still distinguish scientific excellence?' by navigating the repository with data and scripts, describing the data, and showing display items along with the code that generated them (accessible by clicking the `code` button at the top right above each display item).
 #'
 
-#' When referring to or reusing these materials, **please cite** the corresponding preprint [@bulla2026a] and this repository [@bulla2026b].
+#' When referring to or reusing these materials, **please cite** the corresponding preprint [@bulla2026a] and Supporting information [@bulla2026b].
 #'
 
-#' ## Version and reproducibility
+#' ## Version history
 #'
-#' - [`r repo_version`](`r paste0(repo_url, "/tree/", repo_version)`): Current repository version, archived for reproducibility of preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2). The current frozen [HTML Supporting Information](`r versioned_si`)
-#' - [v1.0.0](`r paste0(repo_url, "/tree/v1.0.0")`): First public repository release, archived for reproducibility of preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
+#' - [`r repo_version`](`r paste0(repo_url, "/tree/", repo_version)`): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](`r versioned_si`)
+#' - [v1.0.0](`r paste0(repo_url, "/tree/v1.0.0")`): Repository version associated with preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
+#' - **Note:** The [main](https://github.com/MartinBulla/correspondence_funding/) branch may contain changes made after the most recent release.
+#'
 
-#'
 #' ## Repository contents
 #'
 #' This HTML Supporting information is generated from the following repository structure:
@@ -86,7 +87,7 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 #' [**Output**](`r paste0(repo_tree, "/Output")`)  folder stores separate files of all outputs used in the manuscript:
 #'
 #' - [HTML.html](`r paste0(repo_blob, "/Output/HTML.html")`)
-#' - [Fig_1.png](`r paste0(repo_blob, "/Output/Fig_1_width_185mm.png")`)
+#' - [Fig_1.png](`r paste0(repo_blob, "/Output/Fig_1_width-185mm.png")`)
 #' - [Fig_2.png](`r paste0(repo_blob, "/Output/Fig_2_width-85mm.png")`)
 #'
 

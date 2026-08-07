@@ -1,10 +1,12 @@
 ## Data and R-script behind "Can grant evaluation still distinguish scientific excellence?”
 
-When referring to or reusing these materials, **please cite** the corresponding [preprint](https://doi.org/10.31222/osf.io/d8gcu_v2) and this repository [<sup>1</sup>](#1).
+When referring to or reusing these materials, **please cite** the corresponding [preprint](https://doi.org/10.31222/osf.io/d8gcu_v2) and Supporting information [<sup>1</sup>](#1).
 
 ### Version history
- - [v2.0.0](https://github.com/MartinBulla/correspondence_funding/tree/v2.0.0): Current repository version, archived for reproducibility of preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2); [Frozen HTML Supporting information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/)
- - [v1.0.0](https://github.com/MartinBulla/correspondence_funding/tree/v1.0.0): First public repository release , archived for reproducibility of preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
+- [v2.0.0](https://github.com/MartinBulla/correspondence_funding/tree/v2.0.0): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/).
+- [v1.0.0](https://github.com/MartinBulla/correspondence_funding/tree/v1.0.0): Repository version associated with preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
+- **Note:** The [main](https://github.com/MartinBulla/correspondence_funding/) branch may contain changes made after the most recent release.
+
 
 ### **Repository contents**
 
@@ -23,8 +25,8 @@ When referring to or reusing these materials, **please cite** the corresponding 
   Note that the Postdoctoral Fellowships data include applications to the Long-Term Fellowships scheme, for applicants with a PhD in a biological discipline who wish to undertake a novel, frontier project in the life sciences, but not applications to the Cross-Disciplinary Fellowships scheme, which makes only approximately five awards per year. Similarly, the Research Grants data include applications to the Program scheme, but not to the Early Career scheme, which usually makes fewer than 10 awards per year.
 
 [**R**](R/) folder stores scripts used in the analysis:
- - [`_runRmarkdown.R`](R/_runRmarkdown.R) generates the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/) from [`HTML.R`](R/HTML.R).
- - [`HTML.R`](R/HTML.R) is the script behind the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/), containing all code used to generate the paper outputs.
+ - [`_runRmarkdown.R`](R/_runRmarkdown.R) generates the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/) from [`HTML.R`](R/HTML.R).
+ - [`HTML.R`](R/HTML.R) is the script behind the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/), containing all code used to generate the paper outputs.
 
 [**Output**](Output/) folder stores separate files of all outputs used in the manuscript:
  - [HTML.html](Output/HTML.html)
