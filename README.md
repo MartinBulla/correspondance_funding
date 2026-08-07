@@ -45,5 +45,5 @@ When referring to or reusing these materials, **please cite** the corresponding 
 
 ***
 
-<a name="1"></a>(1) Martin Bulla & Peter Mikula (2026). *Supporting information for 'Can grant evaluation still distinguish scientific excellence?'*, GitHub, https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/; [doi:10.5281/zenodo.21837111](https://doi.org/10.5281/zenodo.21837111).
+<a name="1"></a>(1) Martin Bulla & Peter Mikula (2026). *Supporting information for 'Can grant evaluation still distinguish scientific excellence?'*, GitHub, https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/; [doi:10.5281/zenodo.21837111](https://doi.org/10.5281/zenodo.21837112).
 
