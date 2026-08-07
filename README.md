@@ -1,5 +1,7 @@
 ## Data and R-script behind "Can grant evaluation still distinguish scientific excellence?”
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21837111.svg)](https://doi.org/10.5281/zenodo.21837111)
+
 When referring to or reusing these materials, **please cite** the corresponding [preprint](https://doi.org/10.31222/osf.io/d8gcu_v2) and Supporting information [<sup>1</sup>](#1).
 
 ### Version history
@@ -43,4 +45,5 @@ When referring to or reusing these materials, **please cite** the corresponding 
 
 ***
 
-<a name="1"></a>(1) Martin Bulla & Peter Mikula (2026). *Supporting information for 'Can grant evaluation still distinguish scientific excellence?'*, GitHub, https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/
+<a name="1"></a>(1) Martin Bulla & Peter Mikula (2026). *Supporting information for 'Can grant evaluation still distinguish scientific excellence?'*, GitHub, https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/; [doi:10.5281/zenodo.21837111](https://doi.org/10.5281/zenodo.21837111).
+
