@@ -15,9 +15,6 @@
 #'         self_contained: true
 #' ---
 
-#' <style> body {text-align: justify}</style>
-#' <style> blockquote {padding: 10px 20px; margin: 0 0 20px; font-size: 12px; border-left: 2px solid #a52a2a}</style>
-
 #+ r setup, include=FALSE
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE, fig.retina = 1)
 
@@ -42,7 +39,7 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 
 #' ## Version history
 #'
-#' - [`r repo_version`](`r paste0(repo_url, "/tree/", repo_version)`): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](`r versioned_si`)
+#' - [v2.0.0](`r paste0(repo_url, "/tree/v2.0.0")`): Repository version associated with preprint [version 2](https://osf.io/preprints/metaarxiv/d8gcu_v2) and corresponding [HTML Supporting Information](`r versioned_si`)
 #' - [v1.0.0](`r paste0(repo_url, "/tree/v1.0.0")`): Repository version associated with preprint [version 1](https://osf.io/preprints/metaarxiv/d8gcu_v1).
 #' - **Note:** The [main](https://github.com/MartinBulla/correspondence_funding/) branch may contain changes made after the most recent release.
 #'
@@ -95,6 +92,9 @@ versioned_si <- paste0(pages_url, "versions/", repo_version, "/")
 #'
 #' - [`_bib.bib`](`r paste0(repo_blob, "/Resources/_bib.bib")`) bibliography used in this HTML Supporting information
 #' - [`styles.css`](`r paste0(repo_blob, "/Resources/styles.css")`) defines graphical parameters for this HTML Supporting information generation.
+#'
+
+#' [versions](`r paste0(repo_tree, "/versions")`) stores immutable release-specific HTML Supporting Information.
 #'
 
 #' ### License and reuse

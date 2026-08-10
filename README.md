@@ -39,6 +39,8 @@ When referring to or reusing these materials, **please cite** the corresponding 
  - [`_bib.bib`](Resources/_bib.bib) bibliography used in the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/).
  - [`styles.css`](Resources/styles.css) defines graphical parameters for the [HTML Supporting information](https://martinbulla.github.io/correspondence_funding/versions/v2.0.0/) generation.
 
+[**versions**](versions/) stores immutable release-specific HTML Supporting Information.
+
 ### License and reuse
 
 *Author-generated materials* in this repository, including collated data, derived data, scripts, figures, outputs and HTML, are licensed under the Creative Commons Attribution 4.0 International License [CC-BY-4.0](LICENSE).
