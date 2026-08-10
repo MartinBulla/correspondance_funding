@@ -1,5 +1,10 @@
 /* styles.css */
 
+/* General text formatting */
+body {
+  text-align: justify;
+}
+
 /* scale all headings relative to h1 */
 h1 { font-size: 24px; }   /* set your max size */
 h2 { font-size: 22px; } /* 85% of h1 h2 {font-size: 0.95em;}*/
@@ -17,4 +22,12 @@ h6 { font-size: 14px; }
 #refs .csl-entry {
   margin-left: 2em;
   text-indent: -2em;
+}
+
+/* Blockquote formatting */
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 12px;
+  border-left: 2px solid #a52a2a;
 }
